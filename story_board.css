@@ -1,0 +1,176 @@
+body {
+background-color: rgb(153, 153, 102);
+ margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color: #595959;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #011910;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content2 {
+  margin-left: 17%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.spade-line {
+  text-align: center;
+  font-size: 24px;
+  color: #011910;
+  margin-top: -10px;
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.box {
+  background-color: #595959;
+  border: 2px solid #011910;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  min-height: 150px;
+  color: white;
+  text-align: center;
+}
+.box h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.theme-box {
+  background-color: #011910;
+  border: 3px solid #595959;
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  margin: 40px auto;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.theme-box h2 {
+  color: rgb(153, 153, 102);
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.theme-box p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.theme-elements {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+features-section {
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+}
+.features-section h2 {
+  color: #011910;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    div[style*="margin-left: 17%"],
+    div[style*="margin-left:17%"],
+    .content,
+    main {
+        margin-left: 0 !important;
+    }
+
+   
+    div[style*="padding:1px 16px"],
+    div[style*="padding: 1px 16px"],
+    .content,
+    main {
+        padding: 1px 10px !important;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    table {
+        width: 100% !important;
+        overflow-x: auto;
+        display: block;
+    }
+
+  
+    p[style*="font-size"],
+    span[style*="font-size"] {
+        display: block !important;
+        margin-top: 10px;
+    }
+
+
+    input, textarea, select {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    li a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+  
+    h1 {
+        font-size: 24px !important;
+    }
+    
+    h2 {
+        font-size: 20px !important;
+    }
+
+   
+    td, th {
+        padding: 4px !important;
+    }
+}

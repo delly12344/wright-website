@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(153, 153, 102);
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color: #595959;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #011910;
+  color: white;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.content {
+  margin-left: 17%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+h1 {
+  margin-bottom: 0;
+}
+.wavy-line {
+  margin-top: 0;
+}
+
+.icon-pic{
+	 margin-top: 150px;
+	 margin-left: 15%;
+	 display: flex;
+	 align-items: center;
+	 
+	 
+}
+
+.quote {
+  margin-left: 20px;
+  font-size: 24px;
+  font-style: italic;
+  max-width: 300px;
+}
+@media screen and (max-width: 768px) {
+    
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    div[style*="margin-left: 17%"],
+    div[style*="margin-left:17%"],
+    .content,
+    main {
+        margin-left: 0 !important;
+    }
+
+   
+    div[style*="padding:1px 16px"],
+    div[style*="padding: 1px 16px"],
+    .content,
+    main {
+        padding: 1px 10px !important;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    table {
+        width: 100% !important;
+        overflow-x: auto;
+        display: block;
+    }
+
+  
+    p[style*="font-size"],
+    span[style*="font-size"] {
+        display: block !important;
+        margin-top: 10px;
+    }
+
+
+    input, textarea, select {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    
+    li a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+  
+    h1 {
+        font-size: 24px !important;
+    }
+    
+    h2 {
+        font-size: 20px !important;
+    }
+
+   
+    td, th {
+        padding: 4px !important;
+    }
+}
+center {
+    clear: both;
+    margin: 20px 0;
+}
+
+center img {
+    margin: 20px auto;
+}
+
+.content {
+    height: auto !important; /* Override fixed height */
+    min-height: 1000px;  /* Maintain minimum height if needed */
+    overflow: hidden;    /* Contain floating elements */
+}
+
+.icon-pic {
+    margin-bottom: 50px;  /* Add space after the quote section */
+}
+
+/* Adjust the personality test image container */
+p[style*="center"] {
+    clear: both;
+    padding: 10px 0;
+}
